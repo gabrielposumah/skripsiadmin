@@ -1,0 +1,22 @@
+.home{
+    top: 20px;
+    flex: 4;
+}
+.home p{
+    font-size: 24px;
+    font-family: Poppins;
+    margin-left: 10px;
+}
+
+.charts{
+    align-items: center;
+    width: 1606px;
+    height: 351px;
+    padding: 20px;
+    box-shadow: 5px 5px 20px 1px rgba(134, 134, 134, 0.2);
+}
+
+.newUser{
+    display: flex;
+    margin: 20px;
+}

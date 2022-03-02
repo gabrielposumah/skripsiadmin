@@ -1,0 +1,27 @@
+table{
+    flex:7;
+    background-color: red;
+}
+
+thead{
+    height:60px;
+}
+
+tbody {
+    width: 100%;
+    height:300px;
+}
+
+tbody tr{
+    background-color:#fff;
+    height:150px !important;
+}
+
+tr:nth-child(even){
+    background-color: #E2F9FC;
+}
+tbody tr td{
+   width:40px;
+   height:45px !important;
+   background-color: silver;
+}
