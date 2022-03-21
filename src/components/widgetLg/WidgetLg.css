@@ -17,44 +17,54 @@
   
   .widgetLgTh{
     text-align: left;
+    font-size: 20px;
+    padding: 0px;
   }
   
   .widgetLgUser{
     display: flex;
     align-items: center;
     font-weight: 600;
+    font-size: 18px;
   }
   
   .widgetLgImg {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
   }
   
   .widgetLgDate,.widgetLgAmount{
-    font-weight: 300;
+    font-weight: 300; 
+    justify-content: center;
   }
   
   .widgetLgButton {
-    padding: 5px 7px;
+    padding: 0px 0px;
     border: none;
     border-radius: 10px;
+    margin: 10px 0px;
   }
   
   .widgetLgButton.Approved{
       background-color: #e5faf2;
       color: #3bb077;
+      width: 100px;
   }
   .widgetLgButton.Declined{
       background-color: #fff0f1;
       color: #d95087;
+      width: 100px;
   
   }
   .widgetLgButton.Pending{
       background-color: #ebf1fe;
       color: #2a7ade;
-  
+      width: 100px;
   }
   
+  .widgetLgName{
+    font-size: 18px;
+  }

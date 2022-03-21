@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.register{
+    display: flex;
+}
+
+.registerContentLeft{
+    width: 40%;
+    height: 100vh;
+    background-color: rgb(44, 57, 238);
+    color: white;
+}
+
+.registerContentLeft, .registerContentRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registerContentRight{
+    width: 60%;
+    height: 100vh;
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.titleWrapper{
+    width: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleWrapper img{
+    box-shadow: 0 0 20px 0 #fff;
+}
+
+.titleWrapper h1{
+    text-shadow: 2px 2px #181811;
+    font-size: 2.5em;
+}
+
+.titleWrapper .verticalLine{
+    border: none;
+    height: 128px;
+    border-right-width: 4px;
+    border-style: solid;
+}
+
+.registerContentLeft p {
+    font-size: 20px;
+    padding-top: 10px;
+    
+}
+
+.registerContentRight h1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.registerContentRight img{
+    width: 340px;
+    height: 300px;
+}
+
+button{
+    margin-top: 60px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(44, 57, 238);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size:1.125em;
+    cursor:pointer;
+}       
+
+form {
+    width: 34%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top:20px;
+}
+
+.input1{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+}
+
+.emailInput, .passwordInput, .passwordInput, .ktpInput, .usernameInput {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+form>div>input{
+    padding: 0 20px;
+    width: 20%;
+    height: 50px;
+    margin-top: 25px;
+    border: 1px solid rgba(149, 174, 230, 0.8);
+    border-radius: 10px;
+    font-size:1em;
+}
+
+label{
+    color: black;
+}

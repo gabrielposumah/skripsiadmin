@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import "./Report.css"
 import { DataGrid } from '@mui/x-data-grid';
 import {reportUserRow, userRows} from "../../dummyData"
+import Sidebar from '../../components/sidebar/Sidebar';
+import Topbar from '../../components/topbar/Topbar';
 
 
 export default function Reports() {
@@ -41,10 +43,14 @@ export default function Reports() {
 
   return( 
   <div className='reportsList'>
-    <div className='input'>
-    <h3 className='text'>Report Information</h3>
-    <input type="text" placeholder='&#xf002 search for user....'/>
-    </div>
+     <Topbar/>
+    <div>
+     <Sidebar/>
+      <div className='reportContent'>
+      <div className='input'>
+        <h3 className='text'>Report Information</h3>
+        <input type="text" placeholder=' search for user....'/>
+      </div>
       <DataGrid className='table'
         rows={reportUserRow} 
         disableSelectionOnClick
@@ -52,6 +58,8 @@ export default function Reports() {
         pageSize={8}
         checkboxSelection
       />
+      </div>
+    </div>
   </div>
   )
 }

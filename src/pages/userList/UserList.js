@@ -2,12 +2,13 @@ import React from 'react';
 import "./UserList.css"
 import { DataGrid } from '@mui/x-data-grid';
 import { userRows } from "../../dummyData";
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import Topbar from '../../components/topbar/Topbar'
+import Sidebar from '../../components/sidebar/Sidebar';
 
 export default function UserList() {
 
-  const [data, setData] = useState(userRows);
+  const [data] = useState(userRows);
   
   const columns = [
     { field: "id", headerName: "User ID", width: 90, },
@@ -42,7 +43,7 @@ export default function UserList() {
       }
     },
     {
-      field: "action",
+      field: "password",
       headerName: "Password",
       width: 250,
       renderCell: (params) => {
@@ -57,6 +58,10 @@ export default function UserList() {
 
   return( 
   <div className='userList'>
+    <Topbar/>
+    <div >
+    <Sidebar/>
+    <div className='userContent'>
     <h3 className='text'>User Management</h3>
       <DataGrid className='table'
         rows={data} 
@@ -65,6 +70,8 @@ export default function UserList() {
         pageSize={10}
         checkboxSelection
       />
+    </div>
+    </div>
   </div>
   )
 }

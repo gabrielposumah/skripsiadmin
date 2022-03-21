@@ -1,11 +1,25 @@
 .home{
-    top: 20px;
-    flex: 4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
 }
-.home p{
+
+.home> div:nth-of-type(2){
+    display: flex;
+}
+
+.homeContent p{
     font-size: 24px;
     font-family: Poppins;
     margin-left: 10px;
+}
+
+.homeContent{
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
 }
 
 .charts{
@@ -14,6 +28,7 @@
     height: 351px;
     padding: 20px;
     box-shadow: 5px 5px 20px 1px rgba(134, 134, 134, 0.2);
+    margin-left: 10px;
 }
 
 .newUser{
